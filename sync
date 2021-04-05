@@ -21,6 +21,11 @@ repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync 
 rm -rf packages/inputmethods/LatinIME
 git clone https://github.com/AOSiP/platform_packages_inputmethods_LatinIME -b eleven packages/inputmethods/LatinIME
 
+# Replace Face Unlock with Motorola version
+rm -rf external/faceunlock
+git clone https://gitlab.com/wulan17/external_faceunlock -b 11 external/motorola/faceunlock
+bash external/motorola/faceunlock/regenerate/regenerate.sh
+
 # For fix RIL problem in LOS Android Q based ROM
 #rm -rf packages/services/Telephony
 #git clone https://github.com/LineageOS/android_packages_services_Telephony -b lineage-17.1 packages/services/Telephony

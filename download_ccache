@@ -1,0 +1,8 @@
+#!/bin/bash
+
+echo "Downloading previous ccache . . . . . ."
+
+cd /tmp
+curl https://transfer.sh/hfzEz/ccache-fluid-11-1.tar.gz -o ccache-fluid-11-1.tar.gz
+time tar xf ccache-fluid-11-1.tar.gz
+rm -rf ccache-fluid-11-1.tar.gz

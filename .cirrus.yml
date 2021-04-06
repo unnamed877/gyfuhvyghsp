@@ -3,10 +3,10 @@ env:
     CIRRUS_WORKING_DIR: "/tmp/ci"
 
 task:
-    name: music-player-slim-project
+    name: text_reader_app_test
     timeout_in: 120m
     container:
-      image: ubuntu:latest
+      image: ubuntu:rolling
       cpu: 8
       memory: 32G
     system_update_script:

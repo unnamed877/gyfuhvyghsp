@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ROMDIR=/tmp/rom
-MANIFEST=https://github.com/Project-Fluid/manifest.git
+MANIFEST=https://github.com/unnamed877/manifest.git
 BRANCH=fluid-11
 
 mkdir -p "$ROMDIR"
